@@ -31,12 +31,68 @@
 
 <body class="blog-author bg-gray-100">
   
-
+  <div class="position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg py-0 blur top-0 z-index-fixed shadow position-absolute start-0 end-0 ">
+          <div class="container px-0">
+            <a class="navbar-brand font-weight-bolder ms-sm-3" href="index.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
+              <h2 class="text-dark font-weight-bold">océano</h2> 
+            </span></a>
+            
+            <button class="navbar-toggler shadow-none ms-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+            <div class="navbar-collapse pt-3 pb-2 py-lg-0 w-100 collapse" id="navigation" style="">
+              <ul class="navbar-nav navbar-nav-hover ms-auto">
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="index.html" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <i class="material-icons opacity-6 me-2 text-md">home</i>
+                    Inicio
+                  </a>
+                </li>
+  
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <i class="material-icons opacity-6 me-2 text-md"> </i>
+                    xxxx
+                  </a>
+                </li>
+  
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <i class="material-icons opacity-6 me-2 text-md"> </i>
+                    xxxx
+                  </a>
+                </li>
+  
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <i class="material-icons opacity-6 me-2 text-md"> </i>
+                    xxxx
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav d-lg-block d-none">
+                <li class="nav-item">
+                  <a href="calcular.html" class="btn btn-sm bg-gradient-info mb-0">Ingresar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <header class="bg-gradient-info mb-4">
-    <div class="page-header min-vh-65"
-      style="background-image: url(&quot;assets/img/register_bg_1.png&quot;); background-position-y: 10%;">
-      <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="page-header min-vh-70"
+      style="background-image: url(&quot;assets/img/mar.jpg&quot;); background-position-y: 10%;">
+      <span class="mask bg-gradient-dark opacity-0"></span>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
@@ -44,14 +100,20 @@
             <div class="row justify-content-center">
               <div class="col-lg-8 text-center mx-auto my-auto">
     
-                <img class="my-auto col-4"  src="assets/img/logo.png" alt="" >
-                <img class="" width="300px" src="assets/img/oceano2.jpeg" alt="" >
+                <img class="border-radius-2xl w-90"  src="assets/img/logoletra.png" alt="" >
                   
                 
               </div>
             </div>
             <p class="lead mb-4 mt-3 text-white ">Nos esforzamos por acompañarte en cada momento de tu dia a dia, brindándote una variedad de productos que te ayuden a alcanzar tus metas.
             </p>
+
+            <!-- input buscar -->
+            <div class="group">
+              <svg class="icono-buscar bg-white" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+              <input placeholder="Buscar productos" type="search" class="input-buscar bg-white">
+              
+            </div>
             
 
           </div>
@@ -76,21 +138,107 @@
     </div>
   </header>
 
+  <!-- Buscar productos -->
+  <style>
+    .group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+    .input-buscar {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    }
+
+    .input-buscar:focus, input:hover {
+    outline: none;
+    border-color: #1A73E8;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #1a73e823;
+    }
+
+    .icono-buscar {
+    position: absolute;
+    right: 1rem;
+    fill: #1A73E8;
+    width: 1rem;
+    height: 1rem;
+    }
+
+  </style>
+  
+
   <h2 class="text-center">Categorias</h2>
-  <div class="opacity-9 container" style="position: sticky; top: 0px; z-index: 9999;">
-    <div class="row pb-1 px-1 justify-content-center">
-      <a href="#set1" class="col-auto mt-1 col-sm-2 border mx-1 border-radius-2xl text-white bg-gradient-info text-center text-sm text-edo">
-        Papelería
-      </a>
-      <a href="#set2" class="col-auto mt-1 col-sm-2 border mx-1 border-radius-2xl text-white bg-gradient-info text-center text-sm text-edo">
-        Fiesta
-      </a>
-      <a href="#set3" class="col-auto mt-1 col-sm-2 border mx-1 border-radius-2xl text-white bg-gradient-info text-center text-sm text-edo">
-        Desechables
-      </a>
-      <a href="#set4" class="col-auto mt-1 col-sm-2 border mx-1 border-radius-2xl text-white bg-gradient-info text-center text-sm text-edo">
-        Aseo
-      </a>
+  <div class="opacity-9 container" >
+    <style>
+      
+      .radio-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+        padding: 0.25rem;
+        padding-top: 11px;
+        font-size: 14px;
+      }
+      
+      .radio-inputs .radio {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      
+      .radio-inputs .radio input {
+        display: none;
+      }
+      
+      .radio-inputs .radio .name {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        border: none;
+        padding: .5rem 0;
+        color: rgba(51, 65, 85, 1);
+        transition: all .15s ease-in-out;
+      }
+      
+      .radio-inputs .radio input:checked + .name {
+        background: #1A73E8;
+        color: white;
+        box-shadow: 0 3px 3px 0 rgba(26, 115, 232, 0.15), 0 3px 1px -2px rgba(26, 115, 232, 0.2), 0 1px 5px 0 rgba(26, 115, 232, 0.15);
+        font-weight: 600;
+      }
+    </style>
+    <div class="radio-inputs bg-white text-center">
+      <label class="radio">
+        <input type="radio" name="radio" checked="">
+        <span class="name">Papelería</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio">
+        <span class="name">Fiesta</span>
+      </label>
+          
+      <label class="radio">
+        <input type="radio" name="radio">
+        <span class="name">Desechables</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio">
+        <span class="name">Aseo</span>
+      </label>
     </div>
   </div>
   
@@ -136,20 +284,23 @@
             <div class="col-lg-8 text-center mx-auto my-auto">
   
               
-                <img width="300px" src="assets/img/oceano2.jpeg" alt="" >
+                <img width="300px" src="assets/img/letra.png" alt="" >
                 
               
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-sm-12 mb-3 justify-content-center">
-            <h5 class="text-gradient text-info">Contacto</h6>
+            <h5 class="">Contacto</h6>
             <ul class="flex-column nav">
               <li class="nav-item">
-                El dangond
+                <span class="text-dark font-weight-bold">Dirección:</span> El dangond
               </li>
               <li class="nav-item">
-                Telefono: xxxxxxxxx
+                <span class="text-dark font-weight-bold">Telefono:</span>  xxxxxxxxx
+              </li>
+              <li class="nav-item">
+                <span class="text-dark font-weight-bold">Correo:</span> oceano-colombia@gmail.com
               </li>
             </ul>
         </div>
